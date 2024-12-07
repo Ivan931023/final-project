@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票分析與AI諮詢應用程式</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">股票分析與AI諮詢應用程式</div>
+
+        <div class="form-group">
+            <label for="stock">股票編號</label>
+            <input type="text" id="stock" placeholder="請輸入股票編號">
+        </div>
+
+        <div class="form-group">
+            <label for="start_date">起始日期</label>
+            <input type="date" id="start_date">
+        </div>
+
+        <div class="form-group">
+            <label for="end_date">結束日期</label>
+            <input type="date" id="end_date">
+        </div>
+
+        <button id="submit-button">開始查詢</button>
+        <button id="strategy-button">進行策略比較</button>
+
+        <div id="chart-container">
+            <img id="chart" alt="分析圖表">
+        </div>
+
+        <div class="form-group">
+            <label for="gpt-question">請輸入您的問題</label>
+            <input type="text" id="gpt-question" placeholder="請輸入與股票相關的問題">
+        </div>
+        <button id="gpt-button">發送問題至AI顧問</button>
+        <div id="gpt-reply">(AI顧問回應將顯示在此處)</div>
+
+        <button id="download-button">下載分析結果</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
